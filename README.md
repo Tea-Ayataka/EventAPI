@@ -3,18 +3,17 @@ A event api written in Kotlin
 
 # Usage example
 
-Normal event
+Declaration of normal event class
 ```
 class MouseClickEvent : Event()
 ```
 
-Cancelable event
+Declaration of cancelable event class
 ```
 class KeybordEvent : Event() : Cancelable
 ```
 
-
-Event listener
+Implementation of event listener
 ```
 object ExampleListener {
   init {
@@ -34,7 +33,7 @@ object ExampleListener {
 }
 ```
 
-Event executor
+Implementation of event executor
 ```
 fun executeEvent() {
   // Execute normal event
